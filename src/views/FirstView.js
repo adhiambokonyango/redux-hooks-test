@@ -7,14 +7,17 @@ import PropTypes from 'prop-types';
 
      const dispatch = useDispatch();
      let [value, setValue] = useState(0)
+     let [isNeeded, setNeeded] = useState(89)
 
      useEffect( () => {
-          setValue(number)
-         console.log("number", number)
-     }, [number]);
+         // TODO DISPATCH ACTION WITHOUT PASSING THROUGH PROPS:  dispatch(decreaseCount(isNeeded))
+         // TODO: SOURCE: https://scriptverse.academy/tutorials/reactjs-useselector-usedispatch.html
 
-   let subtract = () =>{
-         props.decreaseCount(value)
+          setValue(number)
+     }, [number]);
+     let subtract = () =>{
+        // props.decreaseCount(value)
+         dispatch(decreaseCount(value))
      }
      let add = () =>{
          props.increaseCount(value)
@@ -26,6 +29,7 @@ import PropTypes from 'prop-types';
             <button onClick={add}>
                 Increment counter FV
             </button><br/><br/>
+            <button onClick={() => dispatch(decreaseCount(value))}>test dispatch</button>
         </div>
     )
 }
