@@ -1,0 +1,176 @@
+.dashboard-container{
+    /*width: 100vw;*/
+    /*width: calc(100% - 270px);*/
+
+    height: 100%;
+    display: grid;
+    font-family: serif;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+/*.dashboard-container div{*/
+/*    padding: 3px;*/
+/*    border: 1px solid black;*/
+/*}*/
+
+
+/*.dashboard-container .header{*/
+/*    grid-column-start: 1;*/
+/*    grid-column-end: 4;*/
+/*}*/
+
+
+.dashboard-container .content-right{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-end: span 4;
+
+}
+.dashboard-container .large-content{
+    grid-row-start: 1;
+    grid-row-end: span 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-right-style: inset;
+    border-width: 1px;
+}
+.data-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+
+    gap: 1px;
+    padding: 3px;
+}
+
+.large-content .counter-section{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    margin-bottom: 1px;
+
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+
+    font-size: 25px;
+    text-transform: capitalize;
+    color: black;
+
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.large-content h6{
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.counter-section .counter-one{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-right-style: inset;
+    border-width: 1px;
+}
+
+.counter-section .counter-two{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-right-style: inset;
+    border-width: 1px;
+
+
+}
+
+.counter-section .counter-three{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-right-style: inset;
+    border-width: 1px;
+
+}
+
+.counter-section .counter-four{
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+}
+
+
+.large-content .progress-section{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 2;
+    grid-row-end: span 1;
+
+    flex-direction: row;
+    align-content: center;
+
+    text-align: center;
+
+    text-transform: capitalize;
+    color: black;
+
+    justify-items: center;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 10px;
+}
+
+.progress-section .bar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+.progress-section .second-bar{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.progress-section .third-bar{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.progress-section .fourth-bar{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.large-content .chart-section{
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    margin-top: 20px;
+
+    /*grid-template-rows: 1fr 1fr;*/
+
+}
+.chart-section .department-data{
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+.chart-section .contract-data{
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+.chart-section h6{
+    text-align: center;
+}
+
+

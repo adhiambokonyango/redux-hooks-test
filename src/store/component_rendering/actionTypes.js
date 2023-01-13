@@ -1,0 +1,2 @@
+
+export const LAUNCH_ADMIN_PAGE = "LAUNCH_ADMIN_PAGE";

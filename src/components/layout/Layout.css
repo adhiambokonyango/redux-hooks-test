@@ -1,0 +1,28 @@
+.main-container{
+    /*width: 100vw;*/
+    /*width: calc(100% - 270px);*/
+
+    height: 100%;
+    display: grid;
+    font-family: serif;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.main-container .content-right{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-end: span 2;
+
+}
+.main-container .large-content{
+    grid-row-start: 1;
+    grid-row-end: span 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-right-style: inset;
+    border-width: 1px;
+}
